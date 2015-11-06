@@ -197,7 +197,16 @@ display:none;
     display: none;
 }
 .side {
-    margin-top: 55px !important;
+    margin-top: 105px !important;
+}
+#search {
+    top: 195px !important;
+}
+.morelink {
+    top: 247px !important;
+}
+.morelink:after {
+    z-index: 99999999999999999 !important;    
 }
 .side form.usertext .usertext-body.md-container {
     position: absolute;
