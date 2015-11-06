@@ -1,4 +1,4 @@
-	/* 
+﻿	/* 
 
 
 
@@ -2956,3 +2956,84 @@
 			   100% {transform:scale(1.5,1.5);			-webkit-transform:scale(1.5,1.5); opacity: 0;}
 			}
 
+
+// RUL STYLES BIIIITCH, IM TINY RICK BIIIIIITCH!
+
+body {
+background-color:#222;
+color: #BDC3C7;
+}
+.thing .title, .tagline a {
+color: #51DB1A;
+}
+.thing .title:visited, .thing.visited .title {
+color: #BDC3C7;
+}
+#header {
+background-color:#222;
+color:white;
+height:190px;
+border-bottom:none;
+}
+.RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+background-color:#222;
+}
+#header-bottom-left {
+display:block;
+width: 200px;
+height: 91px;
+margin: 20px auto;
+position:relative;
+background-image:url(%%RUL-Logo%%);
+}
+
+#header-bottom-left a {
+display:none;
+}
+#header-img.default-header {
+display:none;
+}
+
+.usertext-body.md-container {
+    position: absolute;
+    width: 100%;
+    background-color: #51DB1A;
+    height: 40px;
+    top: 140px;
+    left: 0;
+    padding: 0;
+    display: table;
+    z-index: 99;
+}
+.usertext-body > .md {
+    position: relative;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+padding: 0;
+}
+.usertext-body > .md ul {
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    margin: 0 auto;
+padding:0;
+}
+.usertext-body > .md ul li {
+position:relative;
+    display: inline-block;
+    text-align: center;
+    width: 16%;
+}
+.usertext-body > .md ul li a {
+    font-family: 'Open Sans', HelveticaNeue, Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    font-size: 19px !important;
+    text-transform: uppercase;
+    color: #2a333b;
+    padding: 10px;
+display:inline-block;
+}
+.side {
+background-color:transparent;
+}
