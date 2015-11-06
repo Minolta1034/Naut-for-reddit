@@ -183,7 +183,6 @@ background-image:url(%%RUL-Logo%%);
 background-repeat: no-repeat;
 background-position: 50% 50%;
 }
-
 #header-bottom-left a {
 display:none;
 }
@@ -211,6 +210,12 @@ display:none;
 }
 .morelink:after {
     z-index: 99999999999999999 !important;    
+}
+.comments-page .side .linkinfo {
+    top: 290px !important;
+}
+.comments-page .side {
+    margin-top: 215px !important;
 }
 .side form.usertext .usertext-body.md-container {
     position: absolute;
@@ -288,6 +293,9 @@ display:inline-block;
 }
 .res .titlebox .tagline {
     margin-top: 10px !important;
+}
+input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .linefield textarea, .linefield input[type=text], .linefield input[type=password], .pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number], .login-form-side input[type=text], .login-form-side input[type=password] {
+    background-color: #171717 !important;
 }
 @media (max-width: 768px) {
     .side form.usertext .usertext-body > .md ul li a {
