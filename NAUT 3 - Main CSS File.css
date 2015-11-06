@@ -202,6 +202,10 @@ display:none;
 #search {
     top: 195px !important;
 }
+.c-btn-primary {
+    background-color: #51DB1A !important;
+    border-bottom: none !important;
+}
 .morelink {
     top: 247px !important;
 }
