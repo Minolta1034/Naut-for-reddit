@@ -288,6 +288,12 @@ display:inline-block;
 input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .linefield textarea, .linefield input[type=text], .linefield input[type=password], .pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number], .login-form-side input[type=text], .login-form-side input[type=password] {
     background-color: #171717 !important;
 }
+.thing .tagline .author.submitter {
+    background-color: rgba(0,149,252,0.9) !important;
+}
+.organic-listing, .organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
+    display:none !important;
+}
 @media (max-width: 768px) {
     .side form.usertext .usertext-body > .md ul li a {
         font-size: 14px !important;
