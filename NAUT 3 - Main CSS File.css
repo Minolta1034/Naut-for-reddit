@@ -294,6 +294,187 @@ input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[ty
 .organic-listing, .organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
     display:none !important;
 }
+/*
+///////////
+// FLAIR //
+///////////
+*/
+.flairoptionpane ul li .linkflair:hover, .flairselector li:hover {
+    background-color: #51DB1A !important;
+}
+.flairselector li .flair:before {
+    left: 60px;
+    position: relative;
+}
+.flair:before {
+    content: "";
+    height: 16px;
+    width: 55px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%flair%%);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.flair-MCC-1:before{width:25px;height:25px;background-position:0 0px}
+.flair-MCC-2:before{width:25px;height:25px;background-position:0 -25px}
+.flair-MCC-3:before{width:25px;height:25px;background-position:0 -50px}
+.flair-MCC-4:before{width:25px;height:25px;background-position:0 -75px}
+.flair-MCC-5:before{width:25px;height:25px;background-position:0 -100px}
+.flair-MCC-6:before{width:25px;height:25px;background-position:0 -125px}
+.flair-MCC-7:before{width:25px;height:25px;background-position:0 -150px}
+.flair-MCC-8:before{width:25px;height:25px;background-position:0 -175px}
+.flair-MCC-9:before{width:25px;height:25px;background-position:0 -200px}
+.flair-MCC-10:before{width:25px;height:25px;background-position:0 -225px}
+.flair-MCC-11:before{width:25px;height:25px;background-position:0 -250px}
+.flair-MCC-12:before{width:25px;height:25px;background-position:0 -275px}
+.flair-MCC-13:before{width:25px;height:25px;background-position:0 -300px}
+.flair-MCC-14:before{width:25px;height:25px;background-position:0 -325px}
+.flair-MCC-15:before{width:25px;height:25px;background-position:0 -350px}
+.flair-MCC-16:before{width:25px;height:25px;background-position:0 -375px}
+.flair-MCC-17:before{width:25px;height:25px;background-position:0 -400px}
+.flair-MCC-18:before{width:25px;height:25px;background-position:0 -425px}
+.flair-MCC-19:before{width:25px;height:25px;background-position:0 -450px}
+.flair-MCC-20:before{width:25px;height:25px;background-position:0 -475px}
+.flair-MCC-21:before{width:25px;height:25px;background-position:0 -500px}
+.flair-MCC-22:before{width:25px;height:25px;background-position:0 -525px}
+.flair-MCC-23:before{width:25px;height:25px;background-position:0 -550px}
+.flair-MCC-24:before{width:25px;height:25px;background-position:0 -575px}
+.flair-MCC-25:before{width:25px;height:25px;background-position:0 -600px}
+.flair-MCC-26:before{width:25px;height:25px;background-position:0 -625px}
+.flair-MCC-27:before{width:25px;height:25px;background-position:0 -650px}
+.flair-MCC-28:before{width:25px;height:25px;background-position:0 -675px}
+.flair-MCC-29:before{width:25px;height:25px;background-position:0 -700px}
+.flair-MCC-30:before{width:25px;height:25px;background-position:0 -725px}
+.flair-MCC-31:before{width:25px;height:25px;background-position:0 -750px}
+.flair-MCC-32:before{width:25px;height:25px;background-position:0 -775px}
+.flair-MCC-33:before{width:25px;height:25px;background-position:0 -800px}
+.flair-MCC-34:before{width:25px;height:25px;background-position:0 -825px}
+.flair-MCC-35:before{width:25px;height:25px;background-position:0 -850px}
+.flair-MCC-36:before{width:25px;height:25px;background-position:0 -875px}
+.flair-MCC-37:before{width:25px;height:25px;background-position:0 -900px}
+.flair-MCC-38:before{width:25px;height:25px;background-position:0 -925px}
+.flair-MCC-39:before{width:25px;height:25px;background-position:0 -950px}
+.flair-MCC-40:before{width:25px;height:25px;background-position:0 -975px}
+.flair-MCC-41:before{width:25px;height:25px;background-position:0 -1000px}
+.flair-MCC-42:before{width:25px;height:25px;background-position:0 -1025px}
+.flair-MCC-43:before{width:25px;height:25px;background-position:0 -1050px}
+.flair-MCC-44:before{width:25px;height:25px;background-position:0 -1075px}
+.flair-MCC-45:before{width:25px;height:25px;background-position:0 -1100px}
+.flair-MCC-46:before{width:25px;height:25px;background-position:0 -1125px}
+.flair-MCC-47:before{width:25px;height:25px;background-position:0 -1150px}
+.flair-MCC-48:before{width:25px;height:25px;background-position:0 -1175px}
+.flair-MCC-49:before{width:25px;height:25px;background-position:0 -1200px}
+.flair-MCC-50:before{width:25px;height:25px;background-position:0 -1225px}
+.flair-HaloCombatEvolved:before{width:52px;height:25px;background-position:0 -1250px}
+.flair-Halo2:before{width:50px;height:25px;background-position:0 -1275px}
+.flair-Halo3:before{width:55px;height:25px;background-position:0 -1300px}
+.flair-Halo4:before{width:54px;height:25px;background-position:0 -1325px}
+.flair-HaloSpartanAssault:before{width:22px;height:25px;background-position:0 -1350px}
+.flair-HaloSpartanStrike:before{width:20px;height:25px;background-position:0 -1375px}
+.flair-HaloWars:before{width:25px;height:25px;background-position:0 -1400px}
+.flair-HaloTMCC:before{width:21px;height:25px;background-position:0 -1425px}
+.flair-Novels:before{width:32px;height:25px;background-position:0 -1450px}
+.flair-Halo3ODST:before{width:26px;height:25px;background-position:0 -1475px}
+.flair-HaloReach:before{width:33px;height:25px;background-position:0 -1500px}
+.flair-Halo5Guardians:before{width:53px;height:25px;background-position:0 -1525px}
+.flair-HaloCEAnniversary:before{width:52px;height:25px;background-position:0 -1550px}
+.flair-Vibe:before{width:41px;height:25px;background-position:0 -1575px}
+.flair-BTH:before{width:23px;height:25px;background-position:0 -1600px}
+.flair-Ambush:before{width:25px;height:25px;background-position:0 -1625px}
+.flair-Carbon:before{width:42px;height:25px;background-position:0 -1650px}
+.flair-Agency:before{width:24px;height:25px;background-position:0 -1675px}
+.flair-DarkestHour:before{width:60px;height:25px;background-position:0 -1700px}
+.flair-Excellence:before{width:43px;height:25px;background-position:0 -1725px}
+.flair-PurpleRain:before{width:30px;height:25px;background-position:0 -1750px}
+.flair-Str8Rippin:before{width:23px;height:25px;background-position:0 -1775px}
+.flair-Infused:before{width:24px;height:25px;background-position:0 -1800px}
+.flair-VWS:before{width:41px;height:25px;background-position:0 -1825px}
+.flair-Optic:before{width:40px;height:25px;background-position:0 -1850px}
+.flair-FinalBoss:before{width:29px;height:25px;background-position:0 -1875px}
+.flair-VasAvi:before{width:37px;height:25px;background-position:0 -1900px}
+.flair-TCM:before{width:28px;height:25px;background-position:0 -1925px}
+.flair-STK:before{width:45px;height:25px;background-position:0 -1950px}
+.flair-RealityCheck:before{width:40px;height:25px;background-position:0 -1975px}
+.flair-TriggersDown:before{width:25px;height:25px;background-position:0 -2000px}
+.flair-CounterLogic:before{width:35px;height:25px;background-position:0 -2025px}
+.flair-ESL:before{width:25px;height:25px;background-position:0 -2050px}
+.flair-IronGames:before{width:28px;height:25px;background-position:0 -2075px}
+.flair-Gfinity:before{width:23px;height:25px;background-position:0 -2100px}
+.flair-UGC:before{width:29px;height:25px;background-position:0 -2125px}
+.flair-EvilGeniuses:before{width:36px;height:25px;background-position:0 -2150px}
+.flair-Cloud9:before{width:36px;height:25px;background-position:0 -2175px}
+.flair-SinsOfTheProphet:before{width:25px;height:25px;background-position:0 -2200px}
+.flair-HCS:before{width:21px;height:25px;background-position:0 -2225px}
+.flair-H5-Iron:before{width:25px;height:25px;background-position:0 -2250px}
+.flair-H5-Silver:before{width:26px;height:25px;background-position:0 -2300px}
+.flair-H5-Bronze:before{width:28px;height:25px;background-position:0 -2275px}
+.flair-H5-Gold:before{width:30px;height:25px;background-position:0 -2350px}
+.flair-H5-Onyx:before{width:30px;height:25px;background-position:0 -2325px}
+.flair-H5-Semi-Pro:before{width:26px;height:25px;background-position:0 -2375px}
+.flair-H5-Pro:before{width:29px;height:25px;background-position:0 -2400px}
+.flair-HaloArchive:before{width:24px;height:25px;background-position:0 -2425px}
+.flair-HBO:before{width:51px;height:25px;background-position:0 -2450px}
+.flair-Podtacular:before{width:30px;height:25px;background-position:0 -2475px}
+.flair-GrifballHub:before{width:32px;height:25px;background-position:0 -2500px}
+.flair-TheHaloForum:before{width:29px;height:25px;background-position:0 -2525px}
+.flair-MLG:before{width:35px;height:25px;background-position:0 -2550px}
+.flair-HaloGAF:before{width:25px;height:25px;background-position:0 -2575px}
+.flair-ReadyUpLive:before{width:30px;height:25px;background-position:0 -2600px}
+.flair-BigTeamBattle:before{width:34px;height:25px;background-position:0 -2625px}
+.flair-HaloTracker:before{width:43px;height:25px;background-position:0 -2650px}
+.flair-405th:before{width:28px;height:25px;background-position:0 -2675px}
+.flair-ForgeHub:before{width:27px;height:25px;background-position:0 -2725px}
+.flair-RedditHalo:before{width:27px;height:25px;background-position:0 -2750px}
+.flair-HaloRuns:before{width:19px;height:25px;background-position:0 -2775px}
+.flair-HaloWars2:before{width:67px;height:25px;background-position:0 -2800px}
+.flair-Dexerto:before{width:26px;height:25px;background-position:0 -2825px}
+.flair-Twitch:before{width:24px;height:25px;background-position:0 -2850px}
+.flair-HaloCustoms:before{width:37px;height:25px;background-position:0 -2875px}
+.flair-HighImpactHalo:before{width:12px;height:25px;background-position:0 -2900px}
+.flair-HaloMythic:before{width:25px;height:25px;background-position:0 -2925px}
+.flair-TeamLiquid:before{width:25px;height:25px;background-position:0 -2950px}
+.flair-343IndustriesOrg:before{width:22px;height:25px;background-position:0 -2975px}
+.flair-ONI:before{width:25px;height:25px;background-position:0 -3000px}
+.flair-H5Bronze1:before{width:22px;height:25px;background-position:0 -3025px}
+.flair-H5Bronze2:before{width:22px;height:25px;background-position:0 -3050px}
+.flair-H5Bronze3:before{width:21px;height:25px;background-position:0 -3075px}
+.flair-H5Bronze4:before{width:24px;height:25px;background-position:0 -3100px}
+.flair-H5Bronze5:before{width:25px;height:25px;background-position:0 -3125px}
+.flair-H5Bronze6:before{width:24px;height:25px;background-position:0 -3150px}
+.flair-H5Platinum1:before{width:22px;height:25px;background-position:0 -3175px}
+.flair-H5Platinum2:before{width:22px;height:25px;background-position:0 -3200px}
+.flair-H5Platinum3:before{width:21px;height:25px;background-position:0 -3225px}
+.flair-H5Platinum4:before{width:25px;height:25px;background-position:0 -3250px}
+.flair-H5Platinum5:before{width:24px;height:25px;background-position:0 -3275px}
+.flair-H5Platinum6:before{width:23px;height:25px;background-position:0 -3300px}
+.flair-H5Gold1:before{width:22px;height:25px;background-position:0 -3325px}
+.flair-H5Gold2:before{width:22px;height:25px;background-position:0 -3350px}
+.flair-H5Gold3:before{width:21px;height:25px;background-position:0 -3375px}
+.flair-H5Gold4:before{width:24px;height:25px;background-position:0 -3400px}
+.flair-H5Gold5:before{width:24px;height:25px;background-position:0 -3425px}
+.flair-H5Gold6:before{width:25px;height:25px;background-position:0 -3450px}
+.flair-H5Diamond1:before{width:22px;height:25px;background-position:0 -3475px}
+.flair-H5Diamond2:before{width:22px;height:25px;background-position:0 -3500px}
+.flair-H5Diamond3:before{width:21px;height:25px;background-position:0 -3525px}
+.flair-H5Diamond4:before{width:24px;height:25px;background-position:0 -3550px}
+.flair-H5Diamond5:before{width:25px;height:25px;background-position:0 -3575px}
+.flair-H5Diamond6:before{width:24px;height:25px;background-position:0 -3600px}
+.flair-H5Onyx:before{width:23px;height:25px;background-position:0 -3625px}
+.flair-H5Champion:before{width:24px;height:25px;background-position:0 -3650px}
+.flair-H5Silver1:before{width:22px;height:25px;background-position:0 -3675px}
+.flair-H5Silver2:before{width:22px;height:25px;background-position:0 -3700px}
+.flair-H5Silver3:before{width:21px;height:25px;background-position:0 -3725px}
+.flair-H5Silver4:before{width:24px;height:25px;background-position:0 -3750px}
+.flair-H5Silver5:before{width:25px;height:25px;background-position:0 -3775px}
+.flair-H5Silver6:before{width:24px;height:25px;background-position:0 -3800px}
+.flair-RedditHaloLocke:before{width:30px;height:25px;background-position:0 -3825px}
+
+/*
+////////////////////////////
+// RESPONSIVE STYLES HERE //
+////////////////////////////
+*/
 @media (max-width: 768px) {
     .side form.usertext .usertext-body > .md ul li a {
         font-size: 14px !important;
