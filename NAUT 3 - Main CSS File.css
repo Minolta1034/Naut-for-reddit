@@ -222,7 +222,7 @@ display:none;
 .comments-page .side {
     margin-top: 215px !important;
 }
-.side form.usertext .usertext-body.md-container {
+.side form.usertext .usertext-body > .md ul {
     position: absolute;
     width: 100%;
     background-color: #51DB1A;
@@ -232,20 +232,6 @@ display:none;
     padding: 0;
     display: table;
     z-index: 99;
-}
-.side form.usertext .usertext-body > .md {
-    position: relative;
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
-padding: 0;
-}
-.side form.usertext .usertext-body > .md ul {
-    width: 100%;
-    display: block;
-    list-style-type: none;
-    margin: 0 auto;
-padding:0;
 }
 .side form.usertext .usertext-body > .md ul li {
 position:relative;
