@@ -138,7 +138,7 @@ body:before {background-color: #222}
      {background-color: #51DB1A;}
 
     /* Active color = 10% black overlay color */
-    .morelink:active, .side .titlebox .md h3 a:active, .btn:active, button:active {background-color: #bd3b3b;}
+    .morelink:active, .side .titlebox .md h3 a:active, .btn:active, button:active {background-color: #222;}
 
 /* --- End Addon --- */
 
@@ -208,7 +208,12 @@ display:none;
 .morelink {
     top: 247px !important;
 }
+.morelink a {
+    color: #222 !important;
+    font-weight: bold;
+}
 .morelink:after {
+    color: #222 !important;
     z-index: 99999999999999999 !important;    
 }
 .comments-page .side .linkinfo {
