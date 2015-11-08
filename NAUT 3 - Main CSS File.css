@@ -255,13 +255,14 @@ display:none;
 .side form.usertext .usertext-body > .md ul:before {
 
 }
-.side form.usertext .usertext-body > .md ul li:first-of-type {
+.side form.usertext .usertext-body > .md > ul > li:first-of-type {
     display: block;
     position: absolute;
     width: 50px;
     top: -25px;
     left: 20px;
     height: 25px;
+    opacity: 0.9;
     background-image:url(%%reddit-alien%%);
     background-repeat: no-repeat;
     background-position: 50% 0%    
@@ -277,15 +278,16 @@ display:none;
      -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
         transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
 }
-.side form.usertext .usertext-body > .md ul li:first-of-type:hover {
+.side form.usertext .usertext-body > .md > ul > li:first-of-type:hover {
     display: block;
     position: absolute;
     width: 50px;
     top: -30px;
     left: 20px;
-    height: 30px;  
+    height: 30px;
+    opacity: 1;
 }
-.side form.usertext .usertext-body > .md ul li:first-of-type a {
+.side form.usertext .usertext-body > .md > ul > li:first-of-type a {
     text-indent: -9999999px;
 }
 .side form.usertext .usertext-body > .md ul li {
