@@ -252,6 +252,42 @@ display:none;
     display: table;
     z-index: 99;
 }
+.side form.usertext .usertext-body > .md ul:before {
+
+}
+.side form.usertext .usertext-body > .md ul li:first-of-type {
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: -25px;
+    left: 20px;
+    height: 25px;
+    background-image:url(%%reddit-alien%%);
+    background-repeat: no-repeat;
+    background-position: 50% 0%    
+-webkit-transition: all 500ms cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+}
+.side form.usertext .usertext-body > .md ul li:first-of-type:hover {
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: -30px;
+    left: 20px;
+    height: 30px;  
+}
+.side form.usertext .usertext-body > .md ul li:first-of-type a {
+    text-indent: -9999999px;
+}
 .side form.usertext .usertext-body > .md ul li {
     position:relative;
     display: inline-block;
@@ -533,7 +569,7 @@ input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[ty
 .flair-H5Silver5:before{width:25px;height:25px;background-position:0 -3775px}
 .flair-H5Silver6:before{width:24px;height:25px;background-position:0 -3800px}
 .flair-RedditHaloLocke:before{width:30px;height:25px;background-position:0 -3825px}
-
+.flair-Jawwi:before{width:30px;height:25px;background-position:0 -3850px}
 /*
 ////////////////////////////
 // RESPONSIVE STYLES HERE //
