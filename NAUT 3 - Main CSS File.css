@@ -324,7 +324,7 @@ display:none;
 .side form.usertext .usertext-body > .md ul li a:hover, .side form.usertext .usertext-body > .md ul li:hover {
     color: white;
 }
-.side form.usertext .usertext-body > .md ul li:hover > ul {
+.side form.usertext .usertext-body > .md ul li:hover > ul, .side form.usertext .usertext-body > .md ul li:focus > ul, .side form.usertext .usertext-body > .md ul li:active > ul {
     display: block;
 } 
 .side form.usertext .usertext-body > .md ul li > ul {
@@ -578,9 +578,9 @@ input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[ty
 ////////////////////////////
 */
 @media (max-width: 768px) {
-    .side form.usertext .usertext-body > .md ul li a {
+    .side form.usertext .usertext-body > .md ul li a, .side form.usertext .usertext-body > .md ul li {
         font-size: 14px !important;
-        padding: 10px 0;
+        padding: 3px 0;
     }
 }
 
