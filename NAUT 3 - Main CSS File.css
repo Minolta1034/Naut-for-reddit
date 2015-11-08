@@ -155,7 +155,7 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
 /* --- End Addon --- */
 
 body>.content {
-    margin-top: 55px !important;
+    margin-top: 105px !important;
 }
 .thing .title, .tagline a {
 color: #51DB1A;
@@ -183,6 +183,18 @@ background-image:url(%%RUL-Logo%%);
 background-repeat: no-repeat;
 background-position: 50% 50%;
 }
+#header-bottom-left:after {
+    content: "The Friendliest Gaming Community on the Web!";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Open Sans","Helvetica", "Times New Roman", serif;
+    color: #b6b6b6 !important;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: 80px;
+}
 #header-bottom-left a {
 display:none;
 }
@@ -196,48 +208,66 @@ display:none;
     display: none;
 }
 .side {
-    margin-top: 105px !important;
+    margin-top: 155px !important;
 }
 #search {
-    top: 195px !important;
+    top: 245px !important;
 }
 .c-btn-primary {
     background-color: #51DB1A !important;
     border-bottom: none !important;
 }
 .morelink {
-    top: 247px !important;
+    top: 297px !important;
 }
 .morelink a {
     color: #222 !important;
     font-weight: bold;
+    -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;
+}
+.morelink a:hover {
+    color: white !important;
 }
 .morelink:after {
     color: #222 !important;
     z-index: 99999999999999999 !important;    
 }
 .comments-page .side .linkinfo {
-    top: 290px !important;
+    top: 340px !important;
 }
 .comments-page .side {
-    margin-top: 215px !important;
+    margin-top: 265px !important;
 }
 .side form.usertext .usertext-body > .md ul {
     position: absolute;
     width: 100%;
     background-color: #51DB1A;
     height: 40px;
-    top: 140px;
+    top: 160px;
     left: 0;
-    padding: 0;
+    padding: 15px 0;
     display: table;
     z-index: 99;
 }
 .side form.usertext .usertext-body > .md ul li {
-position:relative;
+    position:relative;
     display: inline-block;
+    cursor: pointer;
     text-align: center;
     width: 16%;
+    font-family: 'Open Sans', HelveticaNeue, Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    font-size: 19px !important;
+    text-transform: uppercase;
+    color: #2a333b;
+    display:inline-block;
+    -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;
 }
 .side form.usertext .usertext-body > .md ul li a {
     font-family: 'Open Sans', HelveticaNeue, Helvetica, Arial, sans-serif !important;
@@ -246,7 +276,36 @@ position:relative;
     text-transform: uppercase;
     color: #2a333b;
     padding: 10px;
-display:inline-block;
+    display:inline-block;
+    width:100%;
+    -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;
+}
+.side form.usertext .usertext-body > .md ul li a:hover, .side form.usertext .usertext-body > .md ul li:hover {
+    color: white;
+}
+.side form.usertext .usertext-body > .md ul li:hover > ul {
+    display: block;
+} 
+.side form.usertext .usertext-body > .md ul li > ul {
+    display:none;
+    top: 20px;
+    width: 100%;
+    height: auto;
+}
+.side form.usertext .usertext-body > .md ul li > ul:hover {
+    display: block;
+}
+.side form.usertext .usertext-body > .md ul li > ul li {
+    width: 100%;
+    display: block;
+    float: left;
+}
+.side form.usertext .usertext-body > .md ul li > ul li a {
+    text-align: center;
+    width: 100%;
 }
 .titlebox .fancy-toggle-button .remove {
     background-color: rgba(81,219,26,0.5) !important;
@@ -255,14 +314,19 @@ display:inline-block;
     background: #51DB1A;
     position: absolute;
     left: 0;
-    top: 140px;
+    top: 190px;
 }
 #header .tabmenu li a {
     color: #222 !important;
     border-color: #222 !important;
+     -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;   
 }
 #header .tabmenu li a:hover, #header .tabmenu li.selected a:hover {
     background-color: transparent !important;
+    color: white !important;
 }
 .link .score.dislikes {
     color: #0095FC;
