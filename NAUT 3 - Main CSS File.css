@@ -170,7 +170,7 @@ height:190px;
 border-bottom:none;
 }
 .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
-background-color:#222;
+background-color: transparent !important;
 }
 #header-bottom-left {
 display:block;
@@ -396,6 +396,14 @@ input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[ty
 .organic-listing, .organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
     display:none !important;
 }
+
+.RES-keyNav-activeElement,
+.res .RES-keyNav-activeThing .md-container,
+.RES-keyNav-activeElement.entry .noncollapsed
+{
+background-color: transparent !important;
+}
+
 /*
 ///////////
 // FLAIR //
