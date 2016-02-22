@@ -34,40 +34,9 @@
 
 /* --- End Addon --- */
 
-<<<<<<< Updated upstream
-/* --- Addon: Header Background Image --- */
-body:before {
-    background-color: #66B880;
-    background-image: none;
-}
-
-#header .tabmenu li a, .pagename a {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-/* --- End Addon --- */
-
-/* --- Addon: Header Color (Primary Color) --- */
-body:before {background-color: #222}
-/* --- End Addon --- */
-
-
-/* --- Addon: Button color (Secondary Color) --- */
-.morelink, .titlebox .fancy-toggle-button .add, .morelink:after, .content .infobar,
-.submit-page #newlink.submit.content .tabmenu.formtab .selected a, .submit-page .infobar, 
-.submit-page #newlink.submit.content .btn, .drop-choices a.choice:hover, .linkflairlabel, .fancy-toggle-button .remove:active
-.expando-button:hover, .top-page .content .menuarea .dropdown.lightdrop .selected, .expando-button:hover, .side .titlebox .md h3 a,
-.res div.RES-keyNav-activeElement, .res div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed, .btn, button {background-color: #51DB1A}
-
-    /* Hover color = 10% white overlay color */
-    .morelink:hover, .submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover, .btn:hover, button:hover,
-    .side .titlebox .md h3 a:hover, .titlebox .fancy-toggle-button .add:hover, .titlebox .fancy-toggle-button .add:hover:after
-     {background-color: #51DB1A;}
-
-    /* Active color = 10% black overlay color */
-    .morelink:active, .side .titlebox .md h3 a:active, .btn:active, button:active {background-color: #bd3b3b;}
-=======
 /* --- Addon: Colorize the Subreddit Info Box --- */
 .side .titlebox h1.redditname:before {background-color: #51DB1A;}
 .side .titlebox h1.redditname a, .titlebox span.subscribers {color: #222;}
->>>>>>> Stashed changes
 
 /* --- End Addon --- */
 
@@ -81,13 +50,13 @@ body:before {background-color: #222}
 body {
 background-color: #222 !important;
 }
-body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox, .commentarea>.usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, .content .commentarea>.usertext {
+body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox, .commentarea>.usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, .content .commentarea>.usertext, .comments-page .side .linkinfo {
 background-color:#121212 !important;
 }
 .side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol, .link .usertext .md, .comment .usertext .md, body .content .text, body .content textarea, body .content input[type=text], body .content input[type=password], .side .spacer input, body .content input[type=url] {
 color: #d2d2d2 !important;
 }
-.link .entry .tagline a, .titlebox:before, .titlebox .number {
+.link .entry .tagline a, .titlebox:before, .titlebox .number, .comments-page .side .linkinfo .score {
 color: #51DB1A !important; 
 }
 .titlebox .users-online {
@@ -105,11 +74,7 @@ background-color: transparent !important; border-color: transparent !important;
 /* END DARK THEME FOR NAUT 4.0 */
 
 body>.content {
-<<<<<<< Updated upstream
-    margin-top: 55px !important;
-=======
 margin-top: 105px !important;
->>>>>>> Stashed changes
 }
 .thing .title, .tagline a {
 color: #51DB1A;
@@ -128,7 +93,7 @@ border-bottom:none;
 margin-left: 16px;
 }
 .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
-background-color:#222;
+background-color: transparent !important;
 }
 #header-bottom-left {
 display:block;
@@ -141,7 +106,18 @@ background-image:url(%%RUL-Logo%%);
 background-repeat: no-repeat;
 background-position: 50% 50%;
 }
-
+#header-bottom-left:after {
+    content: "The Friendliest Gaming Community on the Web!";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Open Sans","Helvetica", "Times New Roman", serif;
+    color: #b6b6b6 !important;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: 80px;
+}
 #header-bottom-left a {
 display:none;
 }
@@ -154,12 +130,6 @@ display:none;
 #header .pagename a:before {
     display: none;
 }
-<<<<<<< Updated upstream
-.side {
-    margin-top: 55px !important;
-}
-.side form.usertext .usertext-body.md-container {
-=======
 .c-btn-primary {
     background-color: #51DB1A !important;
     border-bottom: none !important;
@@ -179,37 +149,74 @@ display:none;
     color: #222 !important;
     z-index: 99999999999999999 !important;    
 }
+.side:before {
+z-index: 99999;
+}
 .side form.usertext .usertext-body > .md ul {
->>>>>>> Stashed changes
     position: absolute;
     width: 100%;
     background-color: #51DB1A;
     height: 40px;
-    top: 140px;
+    top: 160px;
     left: 0;
-    padding: 0;
+    padding: 15px 0;
     display: table;
     z-index: 99;
 }
-.side form.usertext .usertext-body > .md {
-    position: relative;
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
-padding: 0;
+.side form.usertext .usertext-body > .md ul:before {
+
 }
-.side form.usertext .usertext-body > .md ul {
-    width: 100%;
+.side form.usertext .usertext-body > .md > ul > li:first-of-type {
     display: block;
-    list-style-type: none;
-    margin: 0 auto;
-padding:0;
+    position: absolute;
+    width: 50px;
+    top: -25px;
+    left: 20px;
+    height: 25px;
+    opacity: 0.9;
+    background-image:url(%%reddit-alien%%);
+    background-repeat: no-repeat;
+    background-position: 50% 0%    
+-webkit-transition: all 500ms cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+}
+.side form.usertext .usertext-body > .md > ul > li:first-of-type:hover {
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: -30px;
+    left: 20px;
+    height: 30px;
+    opacity: 1;
+}
+.side form.usertext .usertext-body > .md > ul > li:first-of-type a {
+    text-indent: -9999999px;
 }
 .side form.usertext .usertext-body > .md ul li {
-position:relative;
+    position:relative;
     display: inline-block;
+    cursor: pointer;
     text-align: center;
     width: 16%;
+    font-family: 'Open Sans', HelveticaNeue, Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    font-size: 19px !important;
+    text-transform: uppercase;
+    color: #2a333b;
+    display:inline-block;
+    -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;
 }
 .side form.usertext .usertext-body > .md ul li a {
     font-family: 'Open Sans', HelveticaNeue, Helvetica, Arial, sans-serif !important;
@@ -218,7 +225,39 @@ position:relative;
     text-transform: uppercase;
     color: #2a333b;
     padding: 10px;
-display:inline-block;
+    display:inline-block;
+    width:100%;
+    -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;
+}
+.side .sidebox.submit-link .morelink:after{
+left:-168px; background-color: transparent !important;
+}
+.side form.usertext .usertext-body > .md ul li a:hover, .side form.usertext .usertext-body > .md ul li:hover {
+    color: white;
+}
+.side form.usertext .usertext-body > .md ul li:hover > ul, .side form.usertext .usertext-body > .md ul li:focus > ul, .side form.usertext .usertext-body > .md ul li:active > ul {
+    display: block;
+} 
+.side form.usertext .usertext-body > .md ul li > ul {
+    display:none;
+    top: 20px;
+    width: 100%;
+    height: auto;
+}
+.side form.usertext .usertext-body > .md ul li > ul:hover {
+    display: block;
+}
+.side form.usertext .usertext-body > .md ul li > ul li {
+    width: 100%;
+    display: block;
+    float: left;
+}
+.side form.usertext .usertext-body > .md ul li > ul li a {
+    text-align: center;
+    width: 100%;
 }
 .titlebox .fancy-toggle-button .remove {
     background-color: rgba(81,219,26,0.5) !important;
@@ -227,14 +266,19 @@ display:inline-block;
     background: #51DB1A;
     position: absolute;
     left: 0;
-    top: 140px;
+    top: 190px;
 }
 #header .tabmenu li a {
     color: #222 !important;
     border-color: #222 !important;
+     -webkit-transition: color 0.25s ease-out 0s;
+    -moz-transition: color 0.25s ease-out 0s;
+    -o-transition: color 0.25s ease-out 0s;
+    transition: color 0.25s ease-out 0s;   
 }
 #header .tabmenu li a:hover, #header .tabmenu li.selected a:hover {
     background-color: transparent !important;
+    color: white !important;
 }
 .link .score.dislikes {
     color: #0095FC;
@@ -257,8 +301,6 @@ display:inline-block;
 .res .titlebox .tagline {
     margin-top: 10px !important;
 }
-<<<<<<< Updated upstream
-=======
 input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .linefield textarea, .linefield input[type=text], .linefield input[type=password], .pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number], .login-form-side input[type=text], .login-form-side input[type=password] {
     background-color: #171717 !important;
 }
@@ -268,7 +310,11 @@ input:not([type="submit"]), textarea, .roundfield textarea, .roundfield input[ty
 .organic-listing, .organic-listing .link, .organic-listing .link.compressed, .organic-listing .link.promotedlink {
     display:none !important;
 }
-
+.footer-parent {
+    height: 0 !important;
+    padding-top: 0 !important;
+    background-image: none;
+}
 .RES-keyNav-activeElement,
 .res .RES-keyNav-activeThing .md-container,
 .RES-keyNav-activeElement.entry .noncollapsed
@@ -462,11 +508,10 @@ border-color: #51DB1A;
 // RESPONSIVE STYLES HERE //
 ////////////////////////////
 */
->>>>>>> Stashed changes
 @media (max-width: 768px) {
-    .side form.usertext .usertext-body > .md ul li a {
+    .side form.usertext .usertext-body > .md ul li a, .side form.usertext .usertext-body > .md ul li {
         font-size: 14px !important;
-        padding: 10px 0;
+        padding: 3px 0;
     }
 }
 
