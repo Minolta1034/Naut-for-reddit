@@ -30,13 +30,13 @@
     .side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,
     .wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title, 
     .combined-search-page .search-result a, .combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments, 
-    .flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover {color: #51DB1A;}
+    .flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover {color: #51DB1A !important;}
 
 /* --- End Addon --- */
 
 /* --- Addon: Colorize the Subreddit Info Box --- */
 .side .titlebox h1.redditname:before {background-color: #51DB1A;}
-.side .titlebox h1.redditname a, .titlebox span.subscribers {color: #222;}
+.side .titlebox h1.redditname a, .titlebox span.subscribers {color: #222 !important;}
 
 /* --- End Addon --- */
 
@@ -53,14 +53,14 @@ background-color: #222 !important;
 body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox, .commentarea>.usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, .content .commentarea>.usertext, .comments-page .side .linkinfo {
 background-color:#121212 !important;
 }
-.side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol, .link .usertext .md, .comment .usertext .md, body .content .text, body .content textarea, body .content input[type=text], body .content input[type=password], .side .spacer input, body .content input[type=url] {
+.side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol, .link .usertext .md, .comment .usertext .md, body .content .text, body .content textarea, body .content input[type=text], body .content input[type=password], .side .spacer input, body .content input[type=url], .titlebox .users-online, .content.submit .info-notice, .roundfield label, label, .livePreview .md p {
 color: #d2d2d2 !important;
 }
-.link .entry .tagline a, .titlebox:before, .titlebox .number, .comments-page .side .linkinfo .score {
+.link .entry .tagline a, .titlebox:before, .titlebox .number, .comments-page .side .linkinfo .score, .title, .commentarea .menuarea .toggle a:hover, .help-hoverable:hover {
 color: #51DB1A !important; 
 }
-.titlebox .users-online {
-color: #d2d2d2 !important;
+.entry .buttons li a, .link .domain a, .entry .tagline, .commentarea .menuarea span.dropdown-title.lightdrop {
+color: #686E7B !important;
 }
 .expando-button:hover {
 background-color: #51DB1A !important; 
@@ -134,6 +134,9 @@ display:none;
     background-color: #51DB1A !important;
     border-bottom: none !important;
 }
+.content .thing .title:visited, .content .thing.visited .title {
+    color: #228822 !important;
+}
 .morelink a {
     color: #222 !important;
     font-weight: bold;
@@ -150,7 +153,7 @@ display:none;
     z-index: 99999999999999999 !important;    
 }
 .side:before {
-z-index: 99999;
+display:none;
 }
 .side form.usertext .usertext-body > .md ul {
     position: absolute;
@@ -211,7 +214,7 @@ z-index: 99999;
     font-weight: bold;
     font-size: 19px !important;
     text-transform: uppercase;
-    color: #2a333b;
+    color: #2a333b !important;
     display:inline-block;
     -webkit-transition: color 0.25s ease-out 0s;
     -moz-transition: color 0.25s ease-out 0s;
@@ -223,7 +226,7 @@ z-index: 99999;
     font-weight: bold;
     font-size: 19px !important;
     text-transform: uppercase;
-    color: #2a333b;
+    color: #2a333b !important;
     padding: 10px;
     display:inline-block;
     width:100%;
@@ -236,7 +239,7 @@ z-index: 99999;
 left:-168px; background-color: transparent !important;
 }
 .side form.usertext .usertext-body > .md ul li a:hover, .side form.usertext .usertext-body > .md ul li:hover {
-    color: white;
+    color: white !important;
 }
 .side form.usertext .usertext-body > .md ul li:hover > ul, .side form.usertext .usertext-body > .md ul li:focus > ul, .side form.usertext .usertext-body > .md ul li:active > ul {
     display: block;
